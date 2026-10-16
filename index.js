@@ -1,4 +1,9 @@
-// index.js
 const weatherApi = "https://api.weather.gov/alerts/active?area="
 
-// Your code here!
+fetchWeatherAlerts(state)
+
+fetch('https://api.weather.gov/alerts/active?area=${STATE_ABBR}')
+
+displayAlerts(data)
+
+.catch(errorObject => console.log(errorObject.message))
